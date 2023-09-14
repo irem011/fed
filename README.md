@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Aesop home
-  <img src="../fotosweb/home.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/home.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Aesop eyes and lips
-  <img src="../fotosweb/eyeslips.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/eyeslips.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -94,9 +94,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <img src="../fotosweb/ss1.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/ss1.jpg" width="375px" alt="omschrijving van de pagina">
 
-  <img src="../fotosweb/ss2.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/ss2.jpg" width="375px" alt="omschrijving van de pagina">
 
 
   ### Agenda voor meeting

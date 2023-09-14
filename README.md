@@ -33,18 +33,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Ik maak de website Aesop na. Hert is een skincarewebsite die heel strak,clean en minimalistisch is vormgegeven. Dit trekt mij vooral aan om het na te bouwen.
+  </summary>
 
   ### Je opdracht:
   https://www.aesop.com/fr/en/?gclid=CjwKCAjwo9unBhBTEiwAipC11zuE-jGY17nXoKiKNIlWxazzan8QVTTKspWn5ze9AgTitxD8Y2tmFhoCVgIQAvD_BwE&gclsrc=aw.ds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Aesop home
-  <img src="fotosweb/home.jpg" width="375px" alt="omschrijving van de pagina">
+  Aesop home <br>
+  <img src="fotosweb/home.jpg" width="375px" alt="home pagina van Aesop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Aesop eyes and lips
-  <img src="fotosweb/eyeslips.jpg" width="375px" alt="omschrijving van de pagina">
+  Aesop eyes and lips <br>
+  <img src="fotosweb/eyeslips.jpg" width="375px" alt="eyes and lips pagina Aesop">
  
 </details>
 
@@ -71,16 +72,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>Ik denk hier nog over na dus wat ik hier heb staat nog niet vast.<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="fotosweb/ss3.jpg" width="375px" alt="de head">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+ <img src="fotosweb/ss4.jpg" width="375px" alt="de main">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="fotosweb/ss5.jpg" width="375px" alt="de bottom">
 
 </details>
 
@@ -94,19 +95,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <img src="fotosweb/ss1.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/ss1.jpg" width="375px" alt="probleem 1">
 
-  <img src="fotosweb/ss2.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="fotosweb/ss2.jpg" width="375px" alt="probleem 2">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 Zahra                           | student 2  Tristan      
+  | We willen allebei                         | ---                
+  | weten hoe we de                           | en dit             
+  | iconen moeten doen.                       | dit als er tijd is 
+  | Met fotos of op een andere manier?        | ...                
 
 
   ### Verslag van meeting

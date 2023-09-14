@@ -96,8 +96,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+  <p>Ik heb moeite met de woorden OP de foto te zetten.</p><br>
   <img src="fotosweb/ss1.jpg" width="375px" alt="probleem 1">
-
+  <p>Ik moet nog even kijken hoe ik de carousel ga aanpakken, ik denk dat ik er moeite mee zal hebben</p><br>
   <img src="fotosweb/ss2.jpg" width="375px" alt="probleem 2">
 
 

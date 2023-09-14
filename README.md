@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Aesop home
-  <img src="fotosweb/home.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="../fotosweb/home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Aesop eyes and lips
-  <img src="fotosweb/eyeslips.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="../fotosweb/eyeslips.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,7 +56,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: 
+  -Sommige buttons hebben geen omschrijving, geen alt. 
+  -De taal van de website is Engels maar bij bijvoorbeeld Franse woordjes staat er niet bij dat dit in het Frans uitgesperoken moet worden.
+  -Je kan gewoon inzoomen in de website. 
+  -De website bevat geen complexe images dus is er geen behoevte aan alternatieve tekst voor zulke plaatjes. 
+  -De heading elementen worden goed en correct gebruikt. 
+  -Alle fotos hebben een alternatieve tekst.  
 
 </details>
 
@@ -88,7 +94,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="../fotosweb/ss1.png" width="375px" alt="omschrijving van de pagina">
+
+  <img src="../fotosweb/ss2.png" width="375px" alt="omschrijving van de pagina">
 
 
   ### Agenda voor meeting

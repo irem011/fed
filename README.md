@@ -72,9 +72,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>Ik denk hier nog over na dus wat ik hier heb staat nog niet vast.<sup>e</sup> werkgroep</summary>
+  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
+  <p>Ik denk hier nog over na dus het staat niet vast. I haven't decided yet.</p>
   <img src="fotosweb/ss3.jpg" width="375px" alt="de head">
 
   ### dynamisch deel (bijv menu): 

@@ -75,7 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="./fotosweb/indeling.jpg" width="375px" alt="Indeling">
+  <img src="fotosweb/ss6.jpg" width="375px" alt="Indeling">
   <img src="fotosweb/ss3.jpg" width="375px" alt="de head">
 
   ### dynamisch deel (bijv menu): 

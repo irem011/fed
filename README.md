@@ -75,7 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <p>Ik denk hier nog over na dus het staat niet vast. I haven't decided yet.</p>
+  <img src="fotosweb/indeling.jpg" width="375px" alt="Indeling">
   <img src="fotosweb/ss3.jpg" width="375px" alt="de head">
 
   ### dynamisch deel (bijv menu): 
@@ -115,10 +115,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1: Elke pagina een andere titel.
+  - punt 2: Favorietenlijst moet ook in de header.
+  - punt 3: ./ voor elke link.
+  - punt 4: Consistent zijn met waar ik ruimte laat met enter en waar niet. 
+  - punt 5: In section is de volgore; eerst header dan p dan img. dus dat moet ik aanpassen
+  - punt 6: De sectin dan aanpassen met display flex en dan order.
+  - punt 7: Button moet weg want die mag ik niet gebruiken als link. 
+  - punt 8: Elke section moet een heading.
+  - punt 9: De slider eerst correct html'en met ul en dan alle items. 
+  - punt 10: Eelke li een foto dan 1 p met een span voor titel. 
+  - punt 11: Het hartje van mn favorietenlijst mag een img zijn.
 
 </details>
 
@@ -132,17 +139,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het meest lastige was de letterfonts goed doen. Ik ben er heel lang mee bezig geweest maar het is eindelijk gelukt. 
+  Doordat ik de les over positions had gevolgd ging dat nu heel goed. Het is mij gelukt om de ul li op de img te zetten. 
+  Ik moet nu focussen oo mn tweede pagina. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 Zahra                       | student 2         
+  | Tekst onder foto, staan nu 
+  |bij zijkant maar moet er onder
+  |Ik wil maar 4 colommen als ik 
+  |site vergroot hoe doe ik dat
+  |Hoe stop ik de woorden in menu 
+  |knop. Als ik site groter maak 
+  |moet er tekst bij komen in de footer                         
+              
 
 
   ### Verslag van meeting

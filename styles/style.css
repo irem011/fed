@@ -1,31 +1,269 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #FFFEF2;
+	--color-background: #5b3e45;
+	--color-header: rgb(41, 41, 41);
+	--color-whitetext: white; 
+	--color-blacktext: black; 
+	--color-transparent: transparent; 
+	--color-grijs: #333333;
 }
 
-
-
-
+@font-face {
+	font-family: 'Step';
+	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+  }
+  
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* header */
 
+header {
+	background-color: var(--color-background);
+	color: var(--color-text);
+}
+
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header ul li {
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+header ul li a {
+	text-decoration: none;
+}
+
+header ul li button {
+	background-color: var(--color-transparent);
+	border: none;
+}
+
+header ul img {
+	width: 1.3em;
+	height: 1.3em;
+}
+
+header p {
+	background-color: var(--color-header);
+	color: var(--color-whitetext);
+}
+
+header ul li:last-child{
+	position: relative;
+}
+
+header ul li:last-child::after {
+ content: '';
+  position: absolute;
+  width: 0;
+  height: .1em;
+  background-color: var(--color-whitetext);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+header ul li:last-child:hover::after {
+  width: 100%; 
+}
+
+header ul li:nth-child(1) {
+	position: absolute;
+	top: 4em; 
+	left: 1em; 
+  }
+  
+header ul li:nth-child(2) {
+	position: absolute;
+	top: 4em; 
+	left: 12em; 
+  }
+  
+header ul li:nth-child(3) {
+	position: absolute;
+	top: 4em; 
+	left: 14em; 
+  }
+  
+header ul li:nth-child(4) {
+	position: absolute;
+	top: 4em; 
+	left: 16em;
+  }
+
+/* main */
+
+main {
+	background-color: var(--color-text);
+}
+
+main img {
+	width: 100%;
+	height: 100%;
+}
+
+
+h1 {
+	font-size: medium;
+	font-weight: lighter;
+}
+
+h1, h3, p {
+	padding: 1.5em;
+	font-family: 'Step', sans-serif;
+	font-weight: lighter;
+  }
+
+ /* sections */ 
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+main section:first-of-type :nth-child(5) {
+	order: -1;
+  }
+  
+section :nth-of-type(1) h1, h2, h3, p, a{
+	color: var(--color-whitetext)
+}
+
+section :nth-of-type(1){
+	background-color: var(--color-background);
+}
+
+main section a {
+	display: inline-block;
+	padding: 1.5em 1.5em;
+	border: var(--color-whitetext);
+	background: transparent;
+	color: var(--color-whitetext);
+	text-decoration: none;
+	align-self: center;
+}
+
+main section:nth-child(3) a {
+	color: var(--color-blacktext);
+	display: inline-block;
+	padding: 2em 1em;
+	border: solid var(--color-blacktext);
+	background: transparent;
+	text-decoration: none;
+}
+
+main section:nth-child(5) a {
+	color: var(--color-blacktext);
+	display: inline-block;
+	padding: 2em 1em;
+	border: solid var(--color-blacktext);
+	background: transparent;
+	text-decoration: none;
+}
+
+section:nth-child(1) img {
+	width: 20em;
+	height: 20em;
+}
+
+section:nth-child(2) img {
+	width: 20em;
+	height: 10em;
+}
+
+/* slider */
+
+main ul {
+	display:flex;
+	overflow-x:auto;
+  }
+  
+main ul li {
+	flex-shrink:0;
+  }
+  
+main ul li img {
+	margin-right: .125em;
+	width: 100%;
+	height: 100%;
+  }
+
+
+ul {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	justify-content: center;
+}
+
+footer{
+	background-color: var(--color-grijs);
+}
+
+/* Stijlen voor het blokje */
+div :nth-of-type(1) {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--color-whitetext);
+	padding: 10px;
+	width: 300px;
+  }
+  
+  /* Stijlen voor het invoerveld */
+  div input {
+	flex: 1;
+	padding: 8px;
+	border: none;
+	background-color: var(--color-transparent);
+  }
+  
+  /* Stijlen voor de knop met het pijltje */
+  div button {
+	background: none;
+	border: none;
+	padding: 0;
+  }
+  
+  div button img {
+	width: 20px;
+  }
+
+/* Stijlen voor de container */
+footer > div {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 20em; /* breedte instellen als voorbeeld */
+  }
+  
+  /* Stijlen voor elke kolom */
+footer > div > div {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  
+  

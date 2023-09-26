@@ -1,0 +1,191 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --color-text: #FFFEF2;
+    --color-background: #5b3e45;
+    --color-header: rgb(41, 41, 41);
+    --color-whitetext: white;
+    --color-blacktext: black;
+    --color-transparent: transparent;
+    --color-grijs: #333333;
+    --color-donkergeel: #f1f0de;
+}
+
+@font-face {
+    font-family: 'Step';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+
+/*****************/
+/* ALLE SECTIONS */
+/*****************/
+
+main section:nth-child(3) a:nth-last-of-type(1),
+main section:nth-child(4) a:nth-last-of-type(1) 
+    {
+    color: var(--color-blacktext);
+    display: inline-block;
+    padding: 3em 1em;
+    border: solid var(--color-blacktext);
+    background: transparent;
+    text-decoration: none;
+}
+
+main section:nth-child(1) a:nth-last-of-type(1){
+    color: var(--color-whitetext);
+    display: inline-block;
+    padding: 3em 1em;
+    border: solid var(--color-whitetext);
+    background: transparent;
+    text-decoration: none;
+}
+
+@media (width > 30em) {
+
+    main section:nth-child(1) a:nth-last-of-type(1),
+    main section:nth-child(3) a:nth-last-of-type(1),
+    main section:nth-child(4) a:nth-last-of-type(1)
+       {
+        align-self: start;
+    }
+}
+
+
+header ul li a {
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+header ul li button {
+	background-color: var(--color-transparent);
+	border: none;
+}
+
+
+/****************/
+/* HERO SECTION */
+/****************/
+
+main section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+}
+
+main section:nth-of-type(1) a,
+main section:nth-of-type(1) h2,
+main section:nth-of-type(1) h3,
+main section:nth-of-type(1) p {
+    color: var(--color-whitetext);
+}
+
+main section:nth-of-type(1) img {
+    order: -1;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 p {
+    order: 2;
+}
+
+.section1 h2 {
+    order: 3;
+    padding-left: 1em;
+}
+
+.section1 h3 {
+    order: 4;
+}
+
+.section1 a {
+    order: 5;
+}
+
+
+/* SECTION 2 */
+
+
+main section:nth-of-type(2) ul {
+    display: flex;
+    overflow-x: auto;
+}
+
+main section:nth-of-type(2) ul li {
+    flex-shrink: 0;
+}
+
+main section:nth-of-type(2) ul li img {
+    margin-right: .125em;
+    width: 40%;
+    height: 80%;
+    order: -1
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 ul{
+    order: -1;
+}
+
+
+
+/* SECTION 3 */
+
+
+main section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 img{
+    order: -1;
+}
+
+/* SECTION 4 */
+
+main section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+}
+
+.section4{
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 ul{
+    order: -1;
+}
+
+
+/* SECTION 5 */
+
+main section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+}

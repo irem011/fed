@@ -1,0 +1,215 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --color-text: #FFFEF2;
+    --color-background: #5b3e45;
+    --color-header: rgb(41, 41, 41);
+    --color-whitetext: white;
+    --color-blacktext: black;
+    --color-transparent: transparent;
+    --color-grijs: #333333;
+    --color-donkergeel: #f1f0de;
+}
+
+@font-face {
+    font-family: 'Step';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+/****************/
+/* Mijn stijling */
+/****************/
+
+body {
+    background-color: var(--color-text);
+}
+
+main h2, h3, p, a { 
+        color: var(--color-blacktext);
+}
+/* tekst header lijst zwart */
+header ul h1 {
+    color: var(--color-blacktext);
+}
+
+/* tekst header lijst zwart */
+header ul li a {
+    text-decoration: none;
+    color: var(--color-blacktext);
+}
+
+/* tekst header lijst zwart */
+header ul li button {
+    background-color: var(--color-transparent);
+    border: none;
+}
+
+/* section1 */
+/* slider header */
+.section1 ul {
+    display: flex;
+    overflow-x: auto;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    white-space: nowrap;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    background-color: var(--color-donkergeel);
+}
+
+/* slider header */
+.section1 ul li {
+    flex-shrink: 0;
+    margin: .5em;
+    margin-left: 0;
+    font-family: step;
+    font-weight: bold;
+}
+
+/* ruimte van boven */
+.section1 {
+    padding-top: 3em;
+}
+
+/* hydrate */
+.section1 h1 {
+    font-weight: 400;
+    color: var(--color-grijs);
+    font-size: 1.6em;
+}
+
+/* serum button */
+.section1 button {
+    position: sticky;
+    top: 0;
+    border: .1em solid var(--color-grijs);
+    background-color: var(--color-text);
+    color: var(--color-blacktext);
+    padding: 0.5em 1em;
+    /* Adjust padding as needed */
+    text-align: center;
+    /* Center text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Display as inline block */
+    font-size: 1em;
+    /* Adjust font size as needed */
+    margin: 0.5em .1em;
+    /* Adjust margin as needed */
+    cursor: pointer;
+    font-family: step;
+}
+
+/* section 2 */
+.section2 img:first-child {
+    width: 1.3em;
+    height: 1.3em;
+    color: var(--color-grijs);
+}
+
+.section2 {
+    background-color: var(--color-donkergeel);
+}
+
+.section3 img {
+    width: 14em;
+    height: 14em;
+}
+
+.section3 {
+    background-color: var(--color-donkergeel);
+}
+
+/* radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid var(--color-blacktext);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+input[type="radio"]:checked+label::before {
+    background-color: var(--color-grijs);
+}
+
+
+/* section 4 */
+.section4 {
+    background-color: var(--color-donkergeel);
+}
+
+.section4 h2 {
+    font-size: 1em;
+    font-weight: bolder;
+    padding: .5;
+}
+
+.section4 p {
+    font-size: 1em;
+    padding: .5;
+}
+
+/* section 5 */
+.section5 img {
+    width: 14em;
+    height: 14em;
+}
+
+.section5 {
+    background-color: var(--color-donkergeel);
+}
+
+
+/* section 6 */
+.section6 a {
+    border: .1em solid var(--color-grijs);
+    background-color: var(--color-text);
+    color: var(--color-blacktext);
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.5em .1em;
+    cursor: pointer;
+    font-family: step;
+}

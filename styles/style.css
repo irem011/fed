@@ -14,6 +14,7 @@
 /*********************/
 :root {
 	--color-text: #FFFEF2;
+	--link-visited-color: #b2b2b2;
 	--color-background: #5b3e45;
 	--color-header: rgb(41, 41, 41);
 	--color-whitetext: white;
@@ -28,8 +29,6 @@
 	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
 }
 
-
-
 /********************/
 /* ALGEMENE STYLING */
 /********************/
@@ -39,7 +38,6 @@ body {
 }
 
 /* De letters */
-
 h1 {
 	font-size: medium;
 	font-weight: lighter;
@@ -47,9 +45,9 @@ h1 {
 
 h1,
 h2,
-a,
 h3,
-p {
+p,
+a {
 	padding: 1em;
 	font-family: 'Step', sans-serif;
 	font-weight: lighter;
@@ -63,7 +61,6 @@ p {
 /* zwart blokje */
 header {
 	background-color: var(--color-background);
-	color: var(--color-text);
 }
 
 /* tekst in zwart blokje */
@@ -75,7 +72,7 @@ header p {
 }
 
 /* lijst van shoppingcart etc */
-header ul {
+header > ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -90,6 +87,15 @@ header ul {
 	right: 0;
 }
 
+header > ul.open a,
+header ul.open > li:nth-child(5) button {
+	color: var(--color-blacktext);
+}
+
+header > ul.open img {
+	filter:invert(1);
+}
+
 /* Alles in lu van header */
 header ul li {
 	margin-right: 1em;
@@ -102,38 +108,44 @@ header ul img {
 	height: 1.3em;
 }
 
-/* Winkelwagen */
-header ul li a:nth-of-type(3) {
-	position: relative;
+/* cart onderlijning */
+header ul > li:nth-child(4) a {
+    position: relative;
+    display: inline-block; 
 }
 
-/* Winkelwagen de lijn eronder */
-header ul li :nth-of-type(3) {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: .1em;
-	background-color: var(--color-whitetext);
-	bottom: 0;
-	left: 0;
-	transition: width 0.3s ease;
+/* cart onderlijning */
+header ul > li:nth-child(4) a:hover::after {
+    width: 100%; 
 }
 
-/* Winkelwagen de lijn eronder */
-header ul li a:nth-of-type(3):hover::after {
-	width: 100%;
-}
+header ul button:focus {
+	background-color:var();
+  }
+  
+header ul  button:active {
+	background-color:var();
+  }
+
+/* menu button
+header ul > li:nth-child(5) button {
+    background-color: var(--color-transparent);
+    color: var(--color-whitetext); 
+	cursor: pointer;
+} */
 
 /* hamburgermenu */
 header nav ul li a {
 	z-index: 100;
-    color: var(--color-blacktext);
+	color: var(--color-blacktext);
 }
 
+/* hamburgermenu */
 header > ul {
-	z-index:100;
+	z-index: 100;
 }
 
+/* hamburgermenu */
 header nav {
 	display: flex;
 	position: fixed;
@@ -145,10 +157,11 @@ header nav {
 	bottom: 0;
 }
 
+/* hamburgermenu */
 header nav.open {
 	transform: translateX(0%);
+	color: var(--color-blacktext);
 }
-
 
 /********/
 /* MAIN */
@@ -158,17 +171,19 @@ main {
 	background-color: var(--color-text);
 }
 
-
 /**********/
 /* FOOTER */
 /**********/
 
 /* links van footer */
+footer{
+	background-color: var(--color-footer);
+}
+
 footer section {
 	padding: 1em;
 	background-color: var(--color-footer);
 }
-
 
 footer section h2 {
 	margin: 0;
@@ -179,10 +194,16 @@ footer section p {
 	left: -9999em;
 }
 
+footer a {
+	font-family: 'step', sans-serif;
+	color: var(--color-whitetext);
+	font-weight: lighter;
+}
+
 /* letters kleuren */
 footer h2,
-a,
-h3 {
+footer h3,
+footer p {
 	color: var(--color-whitetext);
 }
 
@@ -203,11 +224,11 @@ footer li {
 	list-style: none;
 }
 
-footer h3{
+footer h3 {
 	font-weight: bold;
 }
 
-footer nav li a{
+footer nav li a {
 	text-decoration: none;
 }
 
@@ -239,10 +260,9 @@ footer nav p {
 	color: var(--color-whitetext);
 }
 
-@media (width > 480px){
-	footer{
+@media (width > 15em) {
+	footer {
 		display: grid;
-		grid-template-columns: 50% 50%;
 	}
 }
 
@@ -269,6 +289,13 @@ footer nav p {
 		color: var(--color-whitetext);
 	}
 
+	footer nav {
+		height:36em;
+		display: flex;
+		flex-direction: column;
+		flex-wrap:wrap;
+	}
+
 	footer nav p {
 		color: var(--color-whitetext);
 	}
@@ -278,9 +305,5 @@ footer nav p {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		/* height: 35em; */
 	}
 }
-
-
-

@@ -198,10 +198,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <img src="./fotosweb/ss7.jpg" width="375px" alt="probleem week4">
-  <img src="fotosweb/ss8.jpg" width="375px" alt="probleem week4">
-  <img src="fotosweb/ss9.jpg" width="375px" alt="probleem week4">
-  <img src="fotosweb/ss10.jpg" width="375px" alt="probleem week4">
+  <img src="./fotosweb/ss7.jpg" width="375px" alt="probleem week4">Ik had eerst een proleem met mijn hamburgermenu. Na het openen moest de tekst zwart worden anders kan je het niet zin. Dat is nu gefixt met filter:invert(1);
+  <img src="fotosweb/ss8.jpg" width="375px" alt="probleem week4">De 'visited' states gaan goed, de rest moet ik nog verbeteren, vooral de focused. 
+  <img src="fotosweb/ss9.jpg" width="375px" alt="probleem week4">Ik kan @media nu veel makkelijker gebruiken. Eerst wist ik niet eens hoe je iets responsive moest maken maar nu kan ik het wel. Hier een voorbeeld van dat ik de tekst meer padding geeft wnr je het vergroot tot de desktop. 
+  <img src="fotosweb/ss10.jpg" width="375px" alt="probleem week4">Ik had wat moeite met mijn footer omdat ik 2 kolommen wilde aan de rechterkant. Ik heb geleerd dat ik daarvoor flex-direction: column; kan gebruiken. 
 
 
   ### Agenda voor meeting

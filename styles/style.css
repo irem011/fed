@@ -127,13 +127,6 @@ header ul  button:active {
 	background-color:var();
   }
 
-/* menu button
-header ul > li:nth-child(5) button {
-    background-color: var(--color-transparent);
-    color: var(--color-whitetext); 
-	cursor: pointer;
-} */
-
 /* hamburgermenu */
 header nav ul li a {
 	z-index: 100;

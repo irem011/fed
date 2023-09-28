@@ -179,6 +179,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  -mijn focus states zijn niet altijd duidelijk blijkbaar. 
+  -kan niet roteren?
+  -alt tekst bevat niet alle tekst op het plaatje.
+  -screenreader skipt soms heading levels.
+  -Links zijn niet duidelijk te onderscheiden van buttons. 
 
 </details>
 
@@ -193,16 +198,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="fotosweb/ss7.jpg" width="375px" alt="probleem week4">
+  <img src="fotosweb/ss8.jpg" width="375px" alt="probleem week4">
+  <img src="fotosweb/ss9.jpg" width="375px" alt="probleem week4">
+  <img src="fotosweb/ss10.jpg" width="375px" alt="probleem week4">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1                      | student 2          
+  | ---                            | ---                
+  | Bij footer                      hoe krijg je lijnen tussen de li, hoe krij ik dat de header tevoorschijn komt zodra ik naar boven scrols
+  section p hoort
+  als site kleiner
+  is niet te zien
+  zijn maar dat
+  gebeurt niet
+  alleen als 
+  static weg is 
+  maar dan te groot,
+  Menu button wil niet boven komen, 
+  Header iconen willen niet uit elkaar,
+  Hoe hover ik over img dat er dan een andere komt 
 
 
   ### Verslag van meeting

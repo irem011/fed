@@ -198,7 +198,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <img src="fotosweb/ss7.jpg" width="375px" alt="probleem week4">
+  <img src="./fotosweb/ss7.jpg" width="375px" alt="probleem week4">
   <img src="fotosweb/ss8.jpg" width="375px" alt="probleem week4">
   <img src="fotosweb/ss9.jpg" width="375px" alt="probleem week4">
   <img src="fotosweb/ss10.jpg" width="375px" alt="probleem week4">

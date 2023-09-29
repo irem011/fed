@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Aesop home <br>
-  <img src="fotosweb/home.jpg" width="375px" alt="home pagina van Aesop">
+  <img src="readme-images/home.jpg" width="375px" alt="home pagina van Aesop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Aesop eyes and lips <br>
-  <img src="fotosweb/eyeslips.jpg" width="375px" alt="eyes and lips pagina Aesop">
+  <img src="readme-images/eyeslips.jpg" width="375px" alt="eyes and lips pagina Aesop">
  
 </details>
 
@@ -75,14 +75,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="fotosweb/ss6.jpg" width="375px" alt="Indeling">
-  <img src="fotosweb/ss3.jpg" width="375px" alt="de head">
+  <img src="readme-images/ss6.jpg" width="375px" alt="Indeling">
+  <img src="readme-images/ss3.jpg" width="375px" alt="de head">
 
   ### dynamisch deel (bijv menu): 
- <img src="fotosweb/ss4.jpg" width="375px" alt="de main">
+ <img src="readme-images/ss4.jpg" width="375px" alt="de main">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="fotosweb/ss5.jpg" width="375px" alt="de bottom">
+  <img src="readme-images/ss5.jpg" width="375px" alt="de bottom">
 
 </details>
 
@@ -97,9 +97,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   <p>Ik heb moeite met de woorden OP de foto te zetten.</p><br>
-  <img src="fotosweb/ss1.jpg" width="375px" alt="probleem 1">
+  <img src="readme-images/ss1.jpg" width="375px" alt="probleem 1">
   <p>Ik moet nog even kijken hoe ik de carousel ga aanpakken, ik denk dat ik er moeite mee zal hebben</p><br>
-  <img src="fotosweb/ss2.jpg" width="375px" alt="probleem 2">
+  <img src="readme-images/ss2.jpg" width="375px" alt="probleem 2">
 
 
   ### Agenda voor meeting
@@ -198,10 +198,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <img src="./fotosweb/ss7.jpg" width="375px" alt="probleem week4">Ik had eerst een proleem met mijn hamburgermenu. Na het openen moest de tekst zwart worden anders kan je het niet zin. Dat is nu gefixt met filter:invert(1);
-  <img src="fotosweb/ss8.jpg" width="375px" alt="probleem week4">De 'visited' states gaan goed, de rest moet ik nog verbeteren, vooral de focused. 
-  <img src="fotosweb/ss9.jpg" width="375px" alt="probleem week4">Ik kan @media nu veel makkelijker gebruiken. Eerst wist ik niet eens hoe je iets responsive moest maken maar nu kan ik het wel. Hier een voorbeeld van dat ik de tekst meer padding geeft wnr je het vergroot tot de desktop. 
-  <img src="fotosweb/ss10.jpg" width="375px" alt="probleem week4">Ik had wat moeite met mijn footer omdat ik 2 kolommen wilde aan de rechterkant. Ik heb geleerd dat ik daarvoor flex-direction: column; kan gebruiken. 
+  <img src="readme-images/ss7.jpg" width="375px" alt="probleem week4">Ik had eerst een proleem met mijn hamburgermenu. Na het openen moest de tekst zwart worden anders kan je het niet zin. Dat is nu gefixt met filter:invert(1);
+  <img src="readme-images/ss8.jpg" width="375px" alt="probleem week4">De 'visited' states gaan goed, de rest moet ik nog verbeteren, vooral de focused. 
+  <img src="readme-images/ss9.jpg" width="375px" alt="probleem week4">Ik kan @media nu veel makkelijker gebruiken. Eerst wist ik niet eens hoe je iets responsive moest maken maar nu kan ik het wel. Hier een voorbeeld van dat ik de tekst meer padding geeft wnr je het vergroot tot de desktop. 
+  <img src="readme-images/ss10.jpg" width="375px" alt="probleem week4">Ik had wat moeite met mijn footer omdat ik 2 kolommen wilde aan de rechterkant. Ik heb geleerd dat ik daarvoor flex-direction: column; kan gebruiken. 
 
 
   ### Agenda voor meeting

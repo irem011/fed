@@ -1,0 +1,396 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text: #FFFEF2;
+	--link-visited-color: #b2b2b2;
+	--color-background: #5b3e45;
+	--color-header: rgb(41, 41, 41);
+	--color-whitetext: white;
+	--color-blacktext: black;
+	--color-transparent: transparent;
+	--color-grijs: #333333;
+	--color-footer: #1e1e1e;
+}
+
+@font-face {
+	font-family: 'Step';
+	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+/* bron typografie hulp:https://codepen.io/shooft/pen/rNoaVoE */
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+body {
+	margin: 0;
+}
+
+/* De letters */
+h1 {
+	font-size: medium;
+	font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+	padding: 1em;
+	font-family: 'Step', sans-serif;
+	font-weight: lighter;
+}
+
+
+/**********/
+/* header */
+/**********/
+
+/* zwart blokje */
+header {
+	background-color: var(--color-background);
+}
+
+/* tekst in zwart blokje */
+header p {
+	background-color: var(--color-header);
+	color: var(--color-whitetext);
+	z-index: 100;
+	position: relative;
+}
+
+/* iconen lijst */
+header > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	justify-content: center;
+	justify-content: end;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+/* Alles in lu van header */
+header ul li {
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+/* zoekbalk + hartje img */
+header ul img {
+	width: 1.3em;
+	height: 1.3em;
+	cursor: pointer;
+}
+
+/* iconen lijst */
+header li {
+	margin: 0 1em;
+	list-style: none;
+}
+
+/**********/
+/* header */
+/**********/
+
+
+
+/******************/
+/* hamburgermenu  */
+/******************/
+/* bron: https://codepen.io/shooft/pen/qBLxdzP */
+
+header nav ul li a {
+	z-index: 100;
+	color: var(--color-blacktext);
+	border-bottom: 0.1em solid var(--link-visited-color)
+}
+
+/* hamburgermenu */
+header > ul {
+	z-index: 5;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+/* hamburgermenu */
+header nav {
+	z-index: 100;
+	/* blame kim */
+	display: flex;
+	position: fixed;
+	inset: 0;
+	transform: translateX(-100%);
+	transition: .5s;
+	background-color: var(--color-text);
+	padding-top: 10em;
+	bottom: 0;
+}
+
+/* hamburgermenu openen */
+header nav.open {
+	transform: translateX(0%);
+}
+
+#close {
+    width: 1.25em; 
+    height: 1.25em; 
+    padding: 0; 
+    background-color: var(--color-transparent); 
+    border: none; 
+	cursor: pointer;
+}
+
+#close img {
+    width: 100%; 
+}
+
+/* media beter begrepen met behulp van deze bron: https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
+@media (width > 64em) {
+	header{
+		background-color: var(--color-text);
+	}
+
+	header ul li {
+		margin-right: .5em;
+		padding: 0;
+		display: inline;
+	}
+
+	header > ul li{
+		padding-top: 1em;
+	}
+
+	header ul li h1 {
+		padding-top: 0; 
+        padding-bottom: 0;
+	}
+
+	header ul > li:nth-child(5) button {
+		display: none;
+	}
+
+	header nav ul li a {
+		text-decoration: none;
+		border-bottom: 0;
+		color: var(--color-blacktext);
+	}
+
+	header nav {
+		position: static;
+		transform: unset;
+		padding-top: 0;
+		background-color: transparent;
+	}
+
+	header nav ul {
+		display: flex;
+
+	}
+
+	header nav button {
+		display: none;
+	}
+
+	header ul li a {
+		text-decoration: none;
+		color: var(--color-blacktext);
+		padding-bottom: 0;
+		padding: .5em;
+	}
+}
+
+
+/********/
+/* MAIN */
+/********/
+
+main {
+	background-color: var(--color-text);
+}
+
+.appje {
+	position: fixed;/* ik had toch wel fixed ipv sticky :) */
+	bottom:  1.25em;
+	right:  1.25em;
+	width: 3.125em;
+	height: auto;
+	cursor: pointer;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+/* bron: https://codepen.io/shooft/pen/qBLxdym */
+
+/* links van footer */
+footer {
+	background-color: var(--color-footer);
+}
+
+footer section {
+	padding: 1em;
+	background-color: var(--color-footer);
+}
+
+footer section h2 {
+	margin: 0;
+}
+
+footer section p {
+	position: absolute;
+	left: -9999em;
+}
+
+footer a {
+	font-family: 'step', sans-serif;
+	color: var(--color-whitetext);
+	font-weight: lighter;
+}
+
+/* letters kleuren */
+footer h2,
+footer h3,
+footer p {
+	color: var(--color-whitetext);
+}
+
+/* klikbare woorden */
+footer nav {
+	padding: 1em;
+	background-color: var(--color-footer);
+}
+
+/* hele lijst */
+footer nav ul {
+	margin: 0;
+	min-height: fit-content;
+	list-style: none;
+}
+
+/* alles in de lijst */
+footer li {
+	list-style: none;
+}
+
+footer h3 {
+	font-weight: bold;
+}
+
+footer nav li a {
+	text-decoration: none;
+}
+
+/* email input */
+footer form {
+	display: flex;
+	padding: 1em;
+	background-color: var(--color-footer);
+}
+
+.email-input {
+	padding: 0.625em;
+	border: 0.1em solid var(--color-whitetext);
+	border-radius: 0.3125em 0 0 0.3125em;
+}
+
+footer button {
+	padding: 0.625em  1.25em;
+	border: 0.1em solid var(--color-whitetext);
+	border-radius: 0 0.3125em 0.3125em 0;
+	cursor: pointer;
+}
+
+footer button:hover {
+	background-color: var(--color-whitetext);
+}
+
+footer nav p {
+	color: var(--color-whitetext);
+}
+
+footer img {
+	bottom:  1.25em;
+	right:  1.25em;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+}
+
+/* Add this CSS to position the images horizontally */
+footer nav ul:last-child {
+	display: flex;
+  }
+  
+  footer nav ul:last-child img {
+	margin-right: 0.625em; /* Adjust the margin as needed */
+  }
+  
+
+
+@media (width > 48em) {
+	footer {
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	footer section {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	footer section p {
+		position: static;
+		left: 0em;
+	}
+
+	footer h2,
+	footer p,
+	footer a,
+	footer h3 {
+		color: var(--color-whitetext);
+	}
+
+	footer nav {
+		height: 36em;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	footer nav p {
+		color: var(--color-whitetext);
+	}
+
+	footer nav ul {
+		background-color: var(--color-footer);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	footer nav ul:last-child {
+		display: none;
+	  }
+
+}
+

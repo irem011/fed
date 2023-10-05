@@ -28,6 +28,7 @@
 	font-family: 'Step';
 	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
 }
+/* bron typografie hu;lp:https://codepen.io/shooft/pen/rNoaVoE */
 
 /********************/
 /* ALGEMENE STYLING */
@@ -71,7 +72,7 @@ header p {
 	position: relative;
 }
 
-/* lijst van shoppingcart etc */
+/* iconen lijst */
 header > ul {
 	list-style: none;
 	margin: 0;
@@ -87,59 +88,54 @@ header > ul {
 	right: 0;
 }
 
-header > ul.open a,
-header ul.open > li:nth-child(5) button {
-	color: var(--color-blacktext);
-}
-
-header > ul.open img {
-	filter:invert(1);
-}
-
 /* Alles in lu van header */
 header ul li {
 	margin-right: 1em;
 	margin-top: 1em;
 }
 
-/* zoekbalk + hartje */
+/* zoekbalk + hartje img */
 header ul img {
 	width: 1.3em;
 	height: 1.3em;
+	cursor: pointer;
 }
 
-/* cart onderlijning */
-header ul > li:nth-child(4) a {
-    position: relative;
-    display: inline-block; 
+/* iconen lijst */
+header li {
+	margin: 0 1em;
+	list-style: none;
 }
 
-/* cart onderlijning */
-header ul > li:nth-child(4) a:hover::after {
-    width: 100%; 
-}
+/**********/
+/* header */
+/**********/
 
-header ul button:focus {
-	background-color:var();
-  }
-  
-header ul  button:active {
-	background-color:var();
-  }
 
-/* hamburgermenu */
+
+/******************/
+/* hamburgermenu  */
+/******************/
+/* bron: https://codepen.io/shooft/pen/qBLxdzP */
+
 header nav ul li a {
 	z-index: 100;
 	color: var(--color-blacktext);
+	border-bottom: 0.1em solid var(--link-visited-color)
 }
 
 /* hamburgermenu */
 header > ul {
-	z-index: 100;
+	z-index: 5;
+	list-style: none;
+	display: flex;
+	align-items: center;
 }
 
 /* hamburgermenu */
 header nav {
+	z-index: 100;
+	/* blame kim */
 	display: flex;
 	position: fixed;
 	inset: 0;
@@ -150,11 +146,79 @@ header nav {
 	bottom: 0;
 }
 
-/* hamburgermenu */
+/* hamburgermenu openen */
 header nav.open {
 	transform: translateX(0%);
-	color: var(--color-blacktext);
 }
+
+#close {
+    width: 1.25em; 
+    height: 1.25em; 
+    padding: 0; 
+    background-color: var(--color-transparent); 
+    border: none; 
+	cursor: pointer;
+}
+
+#close img {
+    width: 100%; 
+}
+
+/* media beter begrepen met behulp van deze bron: https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
+@media (width > 64em) {
+	header{
+		background-color: var(--color-text);
+	}
+
+	header ul li {
+		margin-right: .5em;
+		padding: 0;
+		display: inline;
+	}
+
+	header > ul li{
+		padding-top: 1em;
+	}
+
+	header ul li h1 {
+		padding-top: 0; 
+        padding-bottom: 0;
+	}
+
+	header ul > li:nth-child(5) button {
+		display: none;
+	}
+
+	header nav ul li a {
+		text-decoration: none;
+		border-bottom: 0;
+		color: var(--color-blacktext);
+	}
+
+	header nav {
+		position: static;
+		transform: unset;
+		padding-top: 0;
+		background-color: transparent;
+	}
+
+	header nav ul {
+		display: flex;
+
+	}
+
+	header nav button {
+		display: none;
+	}
+
+	header ul li a {
+		text-decoration: none;
+		color: var(--color-blacktext);
+		padding-bottom: 0;
+		padding: .5em;
+	}
+}
+
 
 /********/
 /* MAIN */
@@ -164,12 +228,22 @@ main {
 	background-color: var(--color-text);
 }
 
+.appje {
+	position: fixed;/* ik had toch wel fixed ipv sticky :) */
+	bottom:  1.25em;
+	right:  1.25em;
+	width: 3.125em;
+	height: auto;
+	cursor: pointer;
+}
+
 /**********/
 /* FOOTER */
 /**********/
+/* bron: https://codepen.io/shooft/pen/qBLxdym */
 
 /* links van footer */
-footer{
+footer {
 	background-color: var(--color-footer);
 }
 
@@ -210,6 +284,7 @@ footer nav {
 footer nav ul {
 	margin: 0;
 	min-height: fit-content;
+	list-style: none;
 }
 
 /* alles in de lijst */
@@ -233,15 +308,15 @@ footer form {
 }
 
 .email-input {
-	padding: 10px;
-	border: 1px solid var(--color-whitetext);
-	border-radius: 5px 0 0 5px;
+	padding: 0.625em;
+	border: 0.1em solid var(--color-whitetext);
+	border-radius: 0.3125em 0 0 0.3125em;
 }
 
 footer button {
-	padding: 10px 20px;
-	border: 1px solid var(--color-whitetext);
-	border-radius: 0 5px 5px 0;
+	padding: 0.625em  1.25em;
+	border: 0.1em solid var(--color-whitetext);
+	border-radius: 0 0.3125em 0.3125em 0;
 	cursor: pointer;
 }
 
@@ -253,11 +328,24 @@ footer nav p {
 	color: var(--color-whitetext);
 }
 
-@media (width > 15em) {
-	footer {
-		display: grid;
-	}
+footer img {
+	bottom:  1.25em;
+	right:  1.25em;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
 }
+
+/* Add this CSS to position the images horizontally */
+footer nav ul:last-child {
+	display: flex;
+  }
+  
+  footer nav ul:last-child img {
+	margin-right: 0.625em; /* Adjust the margin as needed */
+  }
+  
+
 
 @media (width > 48em) {
 	footer {
@@ -265,7 +353,7 @@ footer nav p {
 		grid-template-columns: 40% 60%;
 	}
 
-	section {
+	footer section {
 		grid-row-start: 1;
 		grid-row-end: 3;
 	}
@@ -283,10 +371,10 @@ footer nav p {
 	}
 
 	footer nav {
-		height:36em;
+		height: 36em;
 		display: flex;
 		flex-direction: column;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 	}
 
 	footer nav p {
@@ -299,4 +387,10 @@ footer nav p {
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
+	footer nav ul:last-child {
+		display: none;
+	  }
+
 }
+

@@ -33,19 +33,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>Ik maak de website Aesop na. Hert is een skincarewebsite die heel strak,clean en minimalistisch is vormgegeven. Dit trekt mij vooral aan om het na te bouwen.
+  <summary>uitwerken voor kick-off werkgroep
   </summary>
 
   ### Je opdracht:
   https://www.aesop.com/fr/en/?gclid=CjwKCAjwo9unBhBTEiwAipC11zuE-jGY17nXoKiKNIlWxazzan8QVTTKspWn5ze9AgTitxD8Y2tmFhoCVgIQAvD_BwE&gclsrc=aw.ds
+
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Aesop home <br>
   <img src="readme-images/home.jpg" width="375px" alt="home pagina van Aesop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Aesop eyes and lips <br>
-  <img src="readme-images/eyeslips.jpg" width="375px" alt="eyes and lips pagina Aesop">
+  Hydrate<br>
+  <img src="readme-images/hydrate.jpg" width="375px" alt="hydrate pagina Aesop">
  
 </details>
 
@@ -147,7 +148,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Zahra                       | student 2         
+  | student 1 Zahra                       | student 2 Tristan         
   | Tekst onder foto, staan nu 
   |bij zijkant maar moet er onder
   |Ik wil maar 4 colommen als ik 
@@ -161,10 +162,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - punt 1 mn plaatje van een hartje verandere eerst niet van kleur, nu heb ik geleerd dat ik filter: invert kan gebruiken hiervoor.
+  - punt 2 Iets niet zin maar wel in screenreaer: left:-999
+  - punt 3 Flexbox kan ik gebruiken om mijn footer te fixen. 
+  - punt 4 Serum filter moet mee als ik naar beneden scroll, dit kan ik nuu door position sticky,en de sections moet ik evranderen omdat het nu alleen een stukje meegaat odat die section daar stopt. dus de html even aanpassen. 
+  - Ik heb nu geleerd hoe ik een hamburgermenu aan moet pakken. 
 
 </details>
 
@@ -180,7 +182,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   -mijn focus states zijn niet altijd duidelijk blijkbaar. 
-  -kan niet roteren?
   -alt tekst bevat niet alle tekst op het plaatje.
   -screenreader skipt soms heading levels.
   -Links zijn niet duidelijk te onderscheiden van buttons. 
@@ -226,10 +227,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1 De visual code validator is niet genoeg, ook nog valiuderen op een andere site. 
+  - punt 2 screenreader problemen kan ik blijkbaar fixen via de instellingen. 
+  - punt 3 Ik kan de section in een andere section doen en die apart van elkaar een positie geven om uiteindelijk de woorden op de foto te kunne plaatsen. 
+  - punt 4 Sections mag ik classes geven als ze groot zijn, kleine sections moeten ik nth-child voor gebruiken in css. 
+  - punt 5 De button states hoef ik geen visited state bij t doen omdat mjn website dat niet heeft. De andere states wel. 
 
 </details>
 
@@ -243,19 +245,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/k1.jpg" width="375px" alt=" karakteristiek screenshots">
+  <img src="readme-images/k2.jpg" width="375px" alt=" karakteristiek screenshots">
+  <img src="readme-images/k3.jpg" width="375px" alt=" karakteristiek screenshots">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+<img src="readme-images/goed1.jpg" width="375px" alt="Dit ging goed">De sticky positioning ging goed vooral nadat ik de sections een beetje had aangepast. Nu snap ik waar het probleem lag. 
+<img src="readme-images/goed2.jpg" width="375px" alt="Dit ging goed">Ik heb eindelijk de tekst op de foto kunnen zette. Dit ging heel lang niet goed mar het is gelukt. 
+<img src="readme-images/goed4.jpg" width="375px" alt="Dit ging goed">Sliders waren best gemakkelijk en dat ging dus goed. 
+<img src="readme-images/goed3.jpg" width="375px" alt="Dit ging goed">De buttons die kleiner meoten wprden zodra het scherm groter woprdt, gingen heel goed op mn home pagina. 
+  
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  <img src="readme-images/slecht1.jpg" width="375px" alt="Dit ging minder">Het was me op een gegeven moment gelukt om deze li naast de andere li te zetten op het witte vlakte, maar ik kon op een of andere manier de kleur van de tekst neit aanpassen dus het was niet te lezen. Ik heb het dus terug gehaald naar beneden. 
+  <img src="readme-images/slecht2.jpg" width="375px" alt="Dit ging minder">Op mn tweede pagina gingen de buttons helemaal niet zo makkelijk als op de eerste pagina, dus heb ik eht echt een width moeten geven. 
+  <img src="readme-images/slecht3.jpg" width="375px" alt="Dit ging minder">ik kon de sections niet goed zetten op de pagina zoals het hoporde, maar met hulp is dat gelukt. Ikzelf struggelde hier veel mee. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+ 
 </details>
 
 
@@ -271,8 +281,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1 https://css-tricks.com/snippets/css/complete-guide-grid/ 
+  2. bron 2 https://www.w3schools.com/css/css_display_visibility.asp 
+  3. bron 3 https://codepen.io/shooft/pen/bGONoKa
+  3. bron 3 https://codepen.io/shooft/pen/KKbwmao
+  4. bron 4 https://codepen.io/shooft/pen/rNoaVoE
+  5. bron 5 https://codepen.io/shooft/pen/qBLxdzP
+  6. bron 6 https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+  7. bron 7 https://codepen.io/shooft/pen/qBLxdym
+  8. bron 8  <img src="readme-images/chat.jpg" width="375px" alt="Chatgpt">
 
 </details>

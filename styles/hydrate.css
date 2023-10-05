@@ -1,0 +1,399 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --color-text: #FFFEF2;
+    --link-visited-color: #b2b2b2;
+    --color-background: #5b3e45;
+    --color-header: rgb(41, 41, 41);
+    --color-whitetext: white;
+    --color-blacktext: black;
+    --color-transparent: transparent;
+    --color-grijs: #333333;
+    --color-donkergeel: #f1f0de;
+}
+
+@font-face {
+    font-family: 'Step';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+/****************/
+/* Mijn stijling */
+/****************/
+
+body {
+    background-color: var(--color-text);
+}
+
+main h2, p { 
+        color: var(--color-grijs);
+        font-weight: lighter;
+}
+
+/* menu button */
+header ul > li:nth-child(5) button {
+    background-color: var(--color-transparent);
+    color: var(--color-blacktext); 
+	cursor: pointer;
+}
+
+/* tekst header lijst zwart */
+header ul li a {
+    text-decoration: none;
+    color: var(--color-blacktext);
+    padding-bottom: 0;
+    padding: .5em;
+}
+
+/* zoekbalk + hartje zwart maken */
+header ul li img{
+    color: var(--color-blacktext);
+    filter: invert(1);
+}
+
+/* stjilen van zoekbalk en 'menu' */
+header ul li button {
+    background-color: var(--color-transparent);
+    border: none;
+}
+
+/* section1 */
+/* slider header */
+.section1 ul {
+    display: flex;
+    overflow-x: auto;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    white-space: nowrap;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 2.5em;
+    background-color: var(--color-donkergeel);
+}
+
+/* slider */
+.section1 ul li {
+    flex-shrink: 0;
+    margin: .5em;
+    margin-left: 0;
+    font-family: step;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ruimte van boven */
+.section1 {
+    padding-top: 4em;
+}
+
+/* hydrate */
+.section1 h1 {
+    font-weight: 400;
+    color: var(--color-grijs);
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+/* serum filter button */
+main > button {
+    position: sticky;
+    top: 0;
+    border: .1em solid var(--color-grijs);
+    background-color: var(--color-text);
+    color: var(--color-blacktext);
+    padding: 1.5em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 1em;
+    cursor: pointer;
+    font-family: step;
+    z-index: 1;
+}
+
+/* serum filter button hover*/
+main > button:hover{
+    background-color: var(--color-grijs);
+    color: var(--color-whitetext);
+    transition: .4s;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+/* serum filter button focus*/
+main > button:focus {
+    background: var(--color-grijs);
+    color: var(--color-whitetext);
+}
+
+/* section 2 */
+/* hartje */
+.section2 img:first-child {
+    width: 1.3em;
+    filter: invert(1);
+}
+
+/* hartje */
+.section2 a {
+    order: 3; /* Set a positive order value for a */
+    margin-left: auto;
+  }
+
+.section2 {
+    background-color: var(--color-donkergeel);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section2 h2 {
+    color: var(--color-grijs);
+    font-size: smaller;
+    padding: 2em;
+    order: 2;
+    align-items: start;
+  }
+ 
+  .section2 p {
+    order: 1; /* Set order for p to appear at the top */
+    background-color: var(--color-text);
+  }
+  
+.section3 img {
+    width: 14em;
+    height: 14em;
+}
+
+.section3 {
+    background-color: var(--color-donkergeel);
+}
+
+/* add to your cart */
+.section3 a{
+    color: var(--color-whitetext);
+    display: inline-block;
+    padding: 1.5em 1em;
+    width: 90%;
+    border: solid var(--color-blacktext);
+    background-color: var(--color-grijs);
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+}
+
+.section3 a:hover{
+    background-color: var(--color-blacktext);
+    transition: .4s;
+}
+
+/* radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/*radio buttons radio1 en radio2 */
+label[for="radio1"],
+label[for="radio2"] {
+  display: inline-block;
+  position: relative;
+  padding-left: 2em; /* Adjust padding-left as needed */
+  margin-right: 0.5em;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid var(--color-blacktext);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="radio"]:checked+label::before {
+    background-color: var(--color-grijs);
+}
+
+/* section 4 */
+.section4 {
+    background-color: var(--color-donkergeel);
+}
+
+.section4 h2 {
+    font-size: 1em;
+    font-weight: lighter;
+    padding: .5em;
+}
+
+.section4 p {
+    font-size: 1em;
+    padding: .5em;
+}
+
+.section4 img {
+    width: 14em;
+    height: 14em;
+}
+
+.section4 a{
+    color: var(--color-whitetext);
+    display: inline-block;
+    padding: 1.5em 1em;
+    width: 90%;
+    border: solid var(--color-blacktext);
+    background-color: var(--color-grijs);
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+}
+
+.section4 a:hover{
+    background-color: var(--color-blacktext);
+    transition: .4s;
+}
+
+.section5 img {
+    width: 14em;
+    height: 20em;
+}
+
+.section5 {
+    background-color: var(--color-donkergeel);
+}
+
+.section5 a{
+    color: var(--color-whitetext);
+    display: inline-block;
+    padding: 1.5em 1em;
+    width: 90%;
+    border: solid var(--color-blacktext);
+    background-color: var(--color-grijs);
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+}
+
+.section5 a:hover{
+    background-color: var(--color-blacktext);
+    transition: .4s;
+}
+
+/* section 6 */
+main section:nth-of-type(6) a {
+    border: .1em solid var(--color-grijs);
+    background-color: var(--color-text);
+    color: var(--color-blacktext);
+    padding: 1.5em 1.5em;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+main section:nth-of-type(6) a:hover{
+    background-color: var(--color-grijs);
+    color: var(--color-whitetext);
+    transition: .4s;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+main section:nth-of-type(6) a:focus {
+    background: var(--color-grijs);
+    color: var(--color-whitetext);
+}
+
+main section:nth-of-type(6) img {
+    max-width:100%;
+}
+
+@media (width > 32em) {
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        /* bron: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+    }
+
+    .section1 {
+        grid-column: 1/-1;
+    }
+
+    main > button {
+        grid-column: 1/-1;
+    }
+
+    section:nth-of-type(6) {
+        grid-column: 1/-1;
+    }
+
+    .section2 {
+        background-color: transparent;
+    }
+
+    .section2 h2, 
+    .section2 a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .section2{
+        background-color: var(--color-donkergeel);
+    }
+
+    .section2 p{
+        background-color: var(--color-donkergeel);
+    }
+
+    .section2 h2, 
+    .section2 a {
+        display: none;
+        /* bron: https://www.w3schools.com/css/css_display_visibility.asp  */
+    }
+
+    header > ul{
+        color: black;
+    }
+
+    main > button,
+    main section:nth-of-type(6) a {
+        width: 20em;
+        height: 4em;
+        display: flex;
+        align-self: flex-end;
+    }
+}
+
+.section2 h2 {
+    position: absolute;
+    left: -9999px;
+}

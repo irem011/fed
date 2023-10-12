@@ -28,7 +28,7 @@
 	font-family: 'Step';
 	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
 }
-/* bron typografie hu;lp:https://codepen.io/shooft/pen/rNoaVoE */
+/* bron typografie hulp:https://codepen.io/shooft/pen/rNoaVoE */
 
 /********************/
 /* ALGEMENE STYLING */
@@ -162,6 +162,12 @@ header nav.open {
 
 #close img {
     width: 100%; 
+}
+
+#close:focus {
+  border-color: var(--color-footer); 
+  box-shadow: 0 0 .1em var(--color-blacktext); 
+  outline: none;
 }
 
 /* media beter begrepen met behulp van deze bron: https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
@@ -313,11 +319,25 @@ footer form {
 	border-radius: 0.3125em 0 0 0.3125em;
 }
 
+.email-input:focus{
+	background-color: var(--color-blacktext);
+    outline: .1em dashed var(--color-whitetext);
+    color: var(--color-whitetext);
+    border-color: var(--color-whitetext);
+}
+
 footer button {
 	padding: 0.625em  1.25em;
 	border: 0.1em solid var(--color-whitetext);
 	border-radius: 0 0.3125em 0.3125em 0;
 	cursor: pointer;
+}
+
+footer button:focus{
+	background-color: var(--color-blacktext);
+    outline: .1em dashed var(--color-whitetext);
+    color: var(--color-whitetext);
+    border-color: var(--color-whitetext);
 }
 
 footer button:hover {
@@ -336,16 +356,22 @@ footer img {
 	cursor: pointer;
 }
 
-/* Add this CSS to position the images horizontally */
 footer nav ul:last-child {
 	display: flex;
   }
   
   footer nav ul:last-child img {
-	margin-right: 0.625em; /* Adjust the margin as needed */
+	margin-right: 0.625em; 
   }
   
-
+footer a:focus{
+	background-color: var(--color-whitetext);
+    outline: .1em solid var(--color-blacktext);
+    color: var(--color-blacktext);
+    border-color: var(--color-blacktext);
+	margin: 0;
+	padding: 0;
+}
 
 @media (width > 48em) {
 	footer {

@@ -33,20 +33,29 @@
 /* Mijn stijling */
 /****************/
 
+header nav ul li a:focus {
+    outline: .1em dashed var(--color-blacktext);
+}
+
+*:focus {
+    outline: .1em dashed var(--color-blacktext);
+}
+
 body {
     background-color: var(--color-text);
 }
 
-main h2, p { 
-        color: var(--color-grijs);
-        font-weight: lighter;
+main h2,
+p {
+    color: var(--color-grijs);
+    font-weight: lighter;
 }
 
 /* menu button */
-header ul > li:nth-child(5) button {
+header ul>li:nth-child(5) button {
     background-color: var(--color-transparent);
-    color: var(--color-blacktext); 
-	cursor: pointer;
+    color: var(--color-blacktext);
+    cursor: pointer;
 }
 
 /* tekst header lijst zwart */
@@ -58,7 +67,7 @@ header ul li a {
 }
 
 /* zoekbalk + hartje zwart maken */
-header ul li img{
+header ul li img {
     color: var(--color-blacktext);
     filter: invert(1);
 }
@@ -111,7 +120,7 @@ header ul li button {
 }
 
 /* serum filter button */
-main > button {
+main>button {
     position: sticky;
     top: 0;
     border: .1em solid var(--color-grijs);
@@ -124,12 +133,11 @@ main > button {
     font-size: 1em;
     margin: 1em;
     cursor: pointer;
-    font-family: step;
     z-index: 1;
 }
 
 /* serum filter button hover*/
-main > button:hover{
+main>button:hover {
     background-color: var(--color-grijs);
     color: var(--color-whitetext);
     transition: .4s;
@@ -138,9 +146,11 @@ main > button:hover{
 }
 
 /* serum filter button focus*/
-main > button:focus {
-    background: var(--color-grijs);
+main>button:focus {
+    background-color: var(--color-blacktext);
+    outline: .1em dashed var(--color-blacktext);
     color: var(--color-whitetext);
+    border-color: var(--color-blacktext);
 }
 
 /* section 2 */
@@ -152,29 +162,31 @@ main > button:focus {
 
 /* hartje */
 .section2 a {
-    order: 3; /* Set a positive order value for a */
+    order: 3;
+    /* Set a positive order value for a */
     margin-left: auto;
-  }
+}
 
 .section2 {
     background-color: var(--color-donkergeel);
     display: flex;
     flex-direction: column;
-  }
-  
-  .section2 h2 {
+}
+
+.section2 h2 {
     color: var(--color-grijs);
     font-size: smaller;
     padding: 2em;
     order: 2;
     align-items: start;
-  }
- 
-  .section2 p {
-    order: 1; /* Set order for p to appear at the top */
+}
+
+.section2 p {
+    order: 1;
+    /* Set order for p to appear at the top */
     background-color: var(--color-text);
-  }
-  
+}
+
 .section3 img {
     width: 14em;
     height: 14em;
@@ -185,7 +197,7 @@ main > button:focus {
 }
 
 /* add to your cart */
-.section3 a{
+.section3 a {
     color: var(--color-whitetext);
     display: inline-block;
     padding: 1.5em 1em;
@@ -199,7 +211,7 @@ main > button:focus {
     margin: 1em;
 }
 
-.section3 a:hover{
+.section3 a:hover {
     background-color: var(--color-blacktext);
     transition: .4s;
 }
@@ -212,12 +224,13 @@ input[type="radio"] {
 /*radio buttons radio1 en radio2 */
 label[for="radio1"],
 label[for="radio2"] {
-  display: inline-block;
-  position: relative;
-  padding-left: 2em; /* Adjust padding-left as needed */
-  margin-right: 0.5em;
-  cursor: pointer;
-  margin-left: 1em;
+    display: inline-block;
+    position: relative;
+    padding-left: 2em;
+    /* Adjust padding-left as needed */
+    margin-right: 0.5em;
+    cursor: pointer;
+    margin-left: 1em;
 }
 
 label::before {
@@ -258,7 +271,7 @@ input[type="radio"]:checked+label::before {
     height: 14em;
 }
 
-.section4 a{
+.section4 a {
     color: var(--color-whitetext);
     display: inline-block;
     padding: 1.5em 1em;
@@ -272,7 +285,7 @@ input[type="radio"]:checked+label::before {
     margin: 1em;
 }
 
-.section4 a:hover{
+.section4 a:hover {
     background-color: var(--color-blacktext);
     transition: .4s;
 }
@@ -286,7 +299,7 @@ input[type="radio"]:checked+label::before {
     background-color: var(--color-donkergeel);
 }
 
-.section5 a{
+.section5 a {
     color: var(--color-whitetext);
     display: inline-block;
     padding: 1.5em 1em;
@@ -300,7 +313,7 @@ input[type="radio"]:checked+label::before {
     margin: 1em;
 }
 
-.section5 a:hover{
+.section5 a:hover {
     background-color: var(--color-blacktext);
     transition: .4s;
 }
@@ -320,7 +333,7 @@ main section:nth-of-type(6) a {
     cursor: pointer;
 }
 
-main section:nth-of-type(6) a:hover{
+main section:nth-of-type(6) a:hover {
     background-color: var(--color-grijs);
     color: var(--color-whitetext);
     transition: .4s;
@@ -334,12 +347,12 @@ main section:nth-of-type(6) a:focus {
 }
 
 main section:nth-of-type(6) img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 @media (width > 32em) {
     main {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         /* bron: https://css-tricks.com/snippets/css/complete-guide-grid/ */
     }
@@ -348,7 +361,7 @@ main section:nth-of-type(6) img {
         grid-column: 1/-1;
     }
 
-    main > button {
+    main>button {
         grid-column: 1/-1;
     }
 
@@ -360,31 +373,31 @@ main section:nth-of-type(6) img {
         background-color: transparent;
     }
 
-    .section2 h2, 
+    .section2 h2,
     .section2 a {
         font-size: 12px;
         padding: 5px 10px;
     }
 
-    .section2{
+    .section2 {
         background-color: var(--color-donkergeel);
     }
 
-    .section2 p{
+    .section2 p {
         background-color: var(--color-donkergeel);
     }
 
-    .section2 h2, 
+    .section2 h2,
     .section2 a {
         display: none;
         /* bron: https://www.w3schools.com/css/css_display_visibility.asp  */
     }
 
-    header > ul{
+    header>ul {
         color: black;
     }
 
-    main > button,
+    main>button,
     main section:nth-of-type(6) a {
         width: 20em;
         height: 4em;

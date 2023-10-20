@@ -37,6 +37,10 @@ header nav ul li a:focus {
     outline: .1em dashed var(--color-blacktext);
 }
 
+header nav ul li a:active {
+    outline: .1em dashed var(--color-blacktext);
+}
+
 *:focus {
     outline: .1em dashed var(--color-blacktext);
 }
@@ -147,6 +151,13 @@ main>button:hover {
 
 /* serum filter button focus*/
 main>button:focus {
+    background-color: var(--color-blacktext);
+    outline: .1em dashed var(--color-blacktext);
+    color: var(--color-whitetext);
+    border-color: var(--color-blacktext);
+}
+
+main>button:active {
     background-color: var(--color-blacktext);
     outline: .1em dashed var(--color-blacktext);
     color: var(--color-whitetext);

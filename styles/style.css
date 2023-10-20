@@ -22,12 +22,14 @@
 	--color-transparent: transparent;
 	--color-grijs: #333333;
 	--color-footer: #1e1e1e;
+	--color-visited: rgb(86, 86, 196);
 }
 
 @font-face {
 	font-family: 'Step';
 	src: url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
 }
+
 /* bron typografie hulp:https://codepen.io/shooft/pen/rNoaVoE */
 
 /********************/
@@ -73,7 +75,7 @@ header p {
 }
 
 /* iconen lijst */
-header > ul {
+header>ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -125,7 +127,7 @@ header nav ul li a {
 }
 
 /* hamburgermenu */
-header > ul {
+header>ul {
 	z-index: 5;
 	list-style: none;
 	display: flex;
@@ -152,27 +154,27 @@ header nav.open {
 }
 
 #close {
-    width: 1.25em; 
-    height: 1.25em; 
-    padding: 0; 
-    background-color: var(--color-transparent); 
-    border: none; 
+	width: 1.25em;
+	height: 1.25em;
+	padding: 0;
+	background-color: var(--color-transparent);
+	border: none;
 	cursor: pointer;
 }
 
 #close img {
-    width: 100%; 
+	width: 100%;
 }
 
 #close:focus {
-  border-color: var(--color-footer); 
-  box-shadow: 0 0 .1em var(--color-blacktext); 
-  outline: none;
+	border-color: var(--color-footer);
+	box-shadow: 0 0 .1em var(--color-blacktext);
+	outline: none;
 }
 
 /* media beter begrepen met behulp van deze bron: https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
 @media (width > 64em) {
-	header{
+	header {
 		background-color: var(--color-text);
 	}
 
@@ -182,16 +184,16 @@ header nav.open {
 		display: inline;
 	}
 
-	header > ul li{
+	header>ul li {
 		padding-top: 1em;
 	}
 
 	header ul li h1 {
-		padding-top: 0; 
-        padding-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
-	header ul > li:nth-child(5) button {
+	header ul>li:nth-child(5) button {
 		display: none;
 	}
 
@@ -235,9 +237,10 @@ main {
 }
 
 .appje {
-	position: fixed;/* ik had toch wel fixed ipv sticky :) */
-	bottom:  1.25em;
-	right:  1.25em;
+	position: fixed;
+	/* ik had toch wel fixed ipv sticky :) */
+	bottom: 1.25em;
+	right: 1.25em;
 	width: 3.125em;
 	height: auto;
 	cursor: pointer;
@@ -271,6 +274,22 @@ footer a {
 	font-family: 'step', sans-serif;
 	color: var(--color-whitetext);
 	font-weight: lighter;
+}
+
+footer a:focus {
+	background-color: var(--color-whitetext);
+	outline: .1em solid var(--color-blacktext);
+	color: var(--color-blacktext);
+	border-color: var(--color-blacktext);
+	padding: 0;
+}
+
+footer a:visited{
+	color: var(--color-visited);
+}
+
+footer a:hover{
+	filter: brightness(80%);
 }
 
 /* letters kleuren */
@@ -319,25 +338,41 @@ footer form {
 	border-radius: 0.3125em 0 0 0.3125em;
 }
 
-.email-input:focus{
+.email-input:hover {
+	padding: 0.625em;
+	border: 0.1em solid var(--link-visited-color);
+	border-radius: 0.3125em 0 0 0.3125em;
+	color: var(--color-whitetext);
+	background-color: var(--color-grijs);
+}
+
+.email-input:focus {
 	background-color: var(--color-blacktext);
-    outline: .1em dashed var(--color-whitetext);
-    color: var(--color-whitetext);
-    border-color: var(--color-whitetext);
+	outline: .1em dashed var(--color-whitetext);
+	color: var(--color-whitetext);
+	border-color: var(--color-whitetext);
 }
 
 footer button {
-	padding: 0.625em  1.25em;
+	padding: 0.625em 1.25em;
 	border: 0.1em solid var(--color-whitetext);
 	border-radius: 0 0.3125em 0.3125em 0;
 	cursor: pointer;
 }
 
-footer button:focus{
+footer button:focus {
 	background-color: var(--color-blacktext);
-    outline: .1em dashed var(--color-whitetext);
-    color: var(--color-whitetext);
-    border-color: var(--color-whitetext);
+	outline: .1em dashed var(--color-whitetext);
+	color: var(--color-whitetext);
+	border-color: var(--color-whitetext);
+}
+
+footer button:hover {
+	padding: 0.625em 1.25em;
+	border: 0.1em solid var(--color-blacktext);
+	border-radius: 0 0.3125em 0.3125em 0;
+	cursor: pointer;
+	color: var(--color-grijs);
 }
 
 footer button:hover {
@@ -349,8 +384,8 @@ footer nav p {
 }
 
 footer img {
-	bottom:  1.25em;
-	right:  1.25em;
+	bottom: 1.25em;
+	right: 1.25em;
 	width: 2em;
 	height: 2em;
 	cursor: pointer;
@@ -358,19 +393,10 @@ footer img {
 
 footer nav ul:last-child {
 	display: flex;
-  }
-  
-  footer nav ul:last-child img {
-	margin-right: 0.625em; 
-  }
-  
-footer a:focus{
-	background-color: var(--color-whitetext);
-    outline: .1em solid var(--color-blacktext);
-    color: var(--color-blacktext);
-    border-color: var(--color-blacktext);
-	margin: 0;
-	padding: 0;
+}
+
+footer nav ul:last-child img {
+	margin-right: 0.625em;
 }
 
 @media (width > 48em) {
@@ -416,7 +442,6 @@ footer a:focus{
 
 	footer nav ul:last-child {
 		display: none;
-	  }
+	}
 
 }
-

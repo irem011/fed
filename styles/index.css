@@ -69,6 +69,14 @@ header nav ul li a:focus {
     outline: .1em dashed var(--color-whitetext);
 }
 
+header ul:first-child li:active {
+    outline: .1em dotted var(--color-blacktext);
+}
+
+header nav ul li a:active {
+    outline: .1em dashed var(--color-blacktext);
+}
+
 /* sectie 1 button */
 .section1 a {
     color: var(--color-whitetext);

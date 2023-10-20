@@ -16,3 +16,4 @@ function toggleMenu() {
 
 menuButton.onclick = toggleMenu;
 closeButton.onclick = toggleMenu;
+
